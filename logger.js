@@ -5,7 +5,8 @@ let ClassLogger = function (source, enableLogging) {
     if (typeof enableLogging === 'undefined' || enableLogging === true) {
         for (var m in console) {
             if (typeof console[m] === 'function') {
-                source.logger[m] = console[m].bind(window.console, "%c"+source.constructor.name.toUpperCase() + ':', 'font-weight:bold')
+                let classname = typeof source.getClassName === 'function' ? source.getClassName() : source.constructor.name;
+                source.logger[m] = console[m].bind(window.console, "%c"+classname + ':', 'font-weight:bold')
             }
         }
     } else {
