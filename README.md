@@ -24,6 +24,8 @@ class ExampleClass {
     init() {
         let self = this;
         self.logger.log('This is a log line');
+        self.logger.warn('This is a warning');
+        self.logger.error('This is a error');
     }
 }
 ```
