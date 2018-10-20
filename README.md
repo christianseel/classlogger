@@ -1,6 +1,14 @@
 # ClassLogger
 a `console.log()` wrapper for ES6 modules
 
+## Installation
+```
+yarn add github:christianseel/classlogger
+```
+```
+npm install github:christianseel/classlogger
+```
+
 ## Usage
 ```
 import ClassLogger from 'ClassLogger';
