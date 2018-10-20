@@ -1,8 +1,8 @@
-let Logger = function (source) {
+let Logger = function (source, enableLogging) {
     source.logger = {};
     if (!window.console) return function () {};
 
-    if (source.debug === true) {
+    if (typeof enableLogging === 'undefined' || enableLogging === true) {
         for (var m in console) {
             if (typeof console[m] === 'function') {
                 source.logger[m] = console[m].bind(window.console, "%c"+source.constructor.name.toUpperCase() + ':', 'font-weight:bold')
