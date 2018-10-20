@@ -18,6 +18,7 @@ class ExampleClass {
     constructor(){
         let self = this;
         self.logger = ClassLogger(self, true); // set second parameter to false to disable logging
+        self.init();
     }
 
     init() {
