@@ -1,16 +1,16 @@
 {
-	"name": "Logger",
+	"name": "ClassLogger",
 	"description": "console.log wrapper for ES6 classes",
 	"version": "1.0.0",
 	"browser": "logger.js",
 	"maintainers": [{
 		"name": "Christian Seel",
-		"web": "https://seda.digitla"
+		"web": "https://seda.digital"
 	}],
 	"license": "MIT",
-	"repository": "github:christianseel/logger",
+	"repository": "github:christianseel/classlogger",
 	"bugs": {
-		"url": "https://github.com/owner/project/issues"
+		"url": "https://github.com/christianseel/classlogger/issues"
 	},
-	"homepage": "https://github.com/christianseel/logger"
+	"homepage": "https://github.com/christianseel/classlogger"
 }
