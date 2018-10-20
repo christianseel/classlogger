@@ -1,4 +1,4 @@
-let Logger = function (source, enableLogging) {
+let ClassLogger = function (source, enableLogging) {
     source.logger = {};
     if (!window.console) return function () {};
 
@@ -18,4 +18,4 @@ let Logger = function (source, enableLogging) {
     return source.logger
 };
 
-export default Logger;
+export default ClassLogger;
