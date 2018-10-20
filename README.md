@@ -1,16 +1,15 @@
-# logger
+# classlogger
 a `console.log()` wrapper for ES6 modules
 
 ## Usage
 ```
-import Logger from './_logger';
+import ClassLogger from 'ClassLogger';
 
 class ExampleClass {
 
     constructor(){
         let self = this;
-        self.debug = true;
-        self.logger = Logger(self);
+        self.logger = ClassLogger(self, true); // set second parameter to false to disable logging
     }
 
     init() {
