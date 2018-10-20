@@ -1,4 +1,4 @@
-# classlogger
+# ClassLogger
 a `console.log()` wrapper for ES6 modules
 
 ## Usage
